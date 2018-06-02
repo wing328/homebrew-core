@@ -1,5 +1,5 @@
 class OpenapiGenerator < Formula
-  desc "Generate clients, server stubs, and docs from an OpenAPI spec (v2, v3)"
+  desc "Generate clients, server & docs from an OpenAPI spec (v2, v3)"
   homepage "https://openapi-generator.tech"
   url "https://github.com/OpenAPITools/openapi-generator/archive/v3.0.0.tar.gz"
   sha256 "01b4fde626b96c66edd8be71c34027eeda9ad132cc03890e6f051f505e600207"
@@ -12,8 +12,8 @@ class OpenapiGenerator < Formula
     sha256 "4bf5f529fad00809762b99a5fb93e52560f7509cdb7b074c2d02a5081f8bbbd5" => :el_capitan
   end
 
-  depends_on :java => "1.8"
   depends_on "maven" => :build
+  depends_on :java => "1.8"
 
   def install
     # Need to set JAVA_HOME manually since maven overrides 1.8 with 1.7+
