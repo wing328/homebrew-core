@@ -3,7 +3,6 @@ class OpenapiGenerator < Formula
   homepage "https://openapi-generator.tech"
   url "https://github.com/OpenAPITools/openapi-generator/archive/v3.0.0.tar.gz"
   sha256 "01b4fde626b96c66edd8be71c34027eeda9ad132cc03890e6f051f505e600207"
-  head "https://github.com/OpenAPITools/openapi-generator.git"
 
   depends_on "maven" => :build
   depends_on :java => "1.8"
