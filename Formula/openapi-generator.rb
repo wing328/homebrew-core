@@ -4,6 +4,11 @@ class OpenapiGenerator < Formula
   url "https://search.maven.org/remotecontent?filepath=org/openapitools/openapi-generator-cli/3.3.4/openapi-generator-cli-3.3.4.jar"
   sha256 "24cb04939110cffcdd7062d2f50c6f61159dc3e0ca3b8aecbae6ade53ad3dc8c"
 
+  devel do
+    url "https://search.maven.org/remotecontent?filepath=org/openapitools/openapi-generator-cli/4.0.0-beta/openapi-generator-cli-4.0.0-beta.jar"
+    sha256 "579806a025b312ec5ab7bac20c7e264c0c6a5c29a1ac9c804206bb454169f7ef"
+  end
+
   head do
     url "https://github.com/OpenAPITools/openapi-generator.git"
 
