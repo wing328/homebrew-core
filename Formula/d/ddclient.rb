@@ -35,6 +35,11 @@ class Ddclient < Formula
     system "./configure", "--sysconfdir=#{etc}", "--localstatedir=#{var}", "CURL=curl", *std_configure_args
     system "make", "install", "CURL=curl"
 
+    # Ensure uniform bottles across architectures
+    inreplace bin/"ddclient" do |s|
+      s.gsub!(%r{/(usr/local|opt/homebrew)}, HOMEBREW_PREFIX, audit_result: false)
+    end
+
     # Install sample files
     inreplace "sample-ddclient-wrapper.sh", "/etc/ddclient/", "#{pkgetc}/"
     inreplace "sample-etc_cron.d_ddclient", "/usr/bin/ddclient", "#{opt_bin}/ddclient"
