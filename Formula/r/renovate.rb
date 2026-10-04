@@ -1,8 +1,8 @@
 class Renovate < Formula
   desc "Automated dependency updates. Flexible so you don't need to be"
   homepage "https://github.com/renovatebot/renovate"
-  url "https://registry.npmjs.org/renovate/-/renovate-44.132.0.tgz"
-  sha256 "f0ad1e6466c90c558bc4164fa1336128be65d6d9a9656828d42285918693cb53"
+  url "https://registry.npmjs.org/renovate/-/renovate-44.133.0.tgz"
+  sha256 "757daa78b3674c7e258addfea052bd9c4a7d51785d7179f3dc48d06468c30ab3"
   license "AGPL-3.0-only"
 
   # livecheck needs to surface multiple versions for version throttling but
@@ -30,9 +30,6 @@ class Renovate < Formula
   uses_from_macos "git", since: :monterey # needs git >= 2.33.0 (Apple Git-136)
 
   def install
-    # TODO: Remove when Yarn releases an npm-compatible core package, https://github.com/yarnpkg/berry/issues/7281
-    inreplace "package.json", '"@yarnpkg/core": "4.9.2"', '"@yarnpkg/core": "4.9.1"'
-
     system "npm", "install", *std_npm_args
     bin.install_symlink libexec.glob("bin/*")
   end
