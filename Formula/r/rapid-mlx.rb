@@ -3,8 +3,8 @@ class RapidMlx < Formula
 
   desc "Fast local AI engine for Apple Silicon with an OpenAI-compatible API"
   homepage "https://github.com/raullenchai/Rapid-MLX"
-  url "https://files.pythonhosted.org/packages/19/78/2a0f45bf8cdf6413fb58f4942a6703930b2bb09108433d87e0f9ec5a5935/rapid_mlx-0.15.5.tar.gz"
-  sha256 "07f1fc6e3558640b67c6c766e88e062128b0b63fa1aa43e28f09b2e450782efe"
+  url "https://files.pythonhosted.org/packages/14/17/ce898453d294209bfbde0b8caf87229a632ec9b38b44979c332acab0f290/rapid_mlx-0.15.6.tar.gz"
+  sha256 "4a23e7e8c34b5bbd4d075ed8634b480cdd9db8a99e82902e4035c336fc85749a"
   license "Apache-2.0"
 
   bottle do
@@ -65,8 +65,8 @@ class RapidMlx < Formula
   end
 
   resource "filelock" do
-    url "https://files.pythonhosted.org/packages/70/51/2bc9e529f154fad99b6cd0073e609291eb32fd23581b32362d33d164d316/filelock-4.0.9.tar.gz"
-    sha256 "635e7d67fa92654eed444e75e9ca18426d34e77ad9c469bf4373f75a932f7b22"
+    url "https://files.pythonhosted.org/packages/d8/9c/925c4f62920e4200d573d2bfe5cfd1b993134c3aee5f9bd3b7c55e20297e/filelock-4.0.11.tar.gz"
+    sha256 "9dc453a1edd25626a6fc97c2cb1bd9f7e46345843d40b3181c071761fb9a5f7a"
   end
 
   resource "fsspec" do
