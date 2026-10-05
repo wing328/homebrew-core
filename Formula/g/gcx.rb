@@ -1,8 +1,8 @@
 class Gcx < Formula
   desc "CLI for managing Grafana Cloud resources"
   homepage "https://github.com/grafana/gcx"
-  url "https://github.com/grafana/gcx/archive/refs/tags/v1.4.0.tar.gz"
-  sha256 "6fee15c6d0b241fa9128e01e5a5d3ce273ddfe1a7e3bea90d06427e3fba0aac1"
+  url "https://github.com/grafana/gcx/archive/refs/tags/v1.5.0.tar.gz"
+  sha256 "ebdea26a970e6c7307472c886b3c4a2e74831ddf59726911aa01475f8f41a9ea"
   license "Apache-2.0"
   head "https://github.com/grafana/gcx.git", branch: "main"
 
