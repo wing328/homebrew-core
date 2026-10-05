@@ -1,10 +1,9 @@
 class Scrcpy < Formula
   desc "Display and control your Android device"
   homepage "https://github.com/Genymobile/scrcpy"
-  url "https://github.com/Genymobile/scrcpy/archive/refs/tags/v4.1.tar.gz"
-  sha256 "537b2ade623cb94b6edddfa5c61bf0b0af21484aa8365ea2531b686ea573249a"
+  url "https://github.com/Genymobile/scrcpy/archive/refs/tags/v5.0.tar.gz"
+  sha256 "a431f6ed9e63629938464bbfe92b022d6dddf09d7e1d52758b3fc5b52d4c4b03"
   license "Apache-2.0"
-  revision 1
 
   livecheck do
     url :stable
@@ -29,14 +28,20 @@ class Scrcpy < Formula
   depends_on "libusb"
   depends_on "sdl3"
 
+  on_linux do
+    depends_on "libdrm"
+  end
+
   resource "prebuilt-server" do
-    url "https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-server-v4.1", using: :nounzip
-    sha256 "deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae"
+    url "https://github.com/Genymobile/scrcpy/releases/download/v5.0/scrcpy-server-v5.0", using: :nounzip
+    sha256 "26cbc9ad0aced6c2282455bef4fb43462605c1f8758c74b4ab1dbf818c229daa"
 
     livecheck do
       formula :parent
     end
   end
+
+  allow_network_access! :test
 
   def install
     odie "prebuilt-server resource needs to be updated" if version != resource("prebuilt-server").version
