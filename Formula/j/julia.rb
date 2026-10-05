@@ -17,11 +17,11 @@ class Julia < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_golden_gate: "df990aa2df3bdfe935b8e0f914bb1a6df02a5e174c4dec67e71871783aa2c34a"
-    sha256 cellar: :any, arm64_tahoe:       "ed581a02572af9e1030c7c714833eea123f36bae3f136e49b9367b0445d15679"
-    sha256 cellar: :any, arm64_sequoia:     "a81f23e7b1dad761494c10830701ff895beabe36d622d1c6364ff6f0cf17e87a"
-    sha256 cellar: :any, arm64_linux:       "35f5ea8011129f2fff336817c5fde7dba65dda4517ea8a979b8a2ba496477ab1"
-    sha256 cellar: :any, x86_64_linux:      "1089f6e86e175aae7f9e3d9024645bde4aa5f4caaeb6096d42bf46036b9f04b2"
+    sha256 cellar: :any, arm64_golden_gate: "acb7c48f853d410f4dab33903e76fdf4418474d95dd945652517f44cca65051c"
+    sha256 cellar: :any, arm64_tahoe:       "08ba412d490309837c59a45e8f51a0fe640b54d50c9fcc136e3a89f750f619bb"
+    sha256 cellar: :any, arm64_sequoia:     "3ea8eb8f6c4a48371c9758a10b48b9735543757f4ff589f3a9b0d44572d30255"
+    sha256 cellar: :any, arm64_linux:       "6a74cfab12b935cf155d348ac019daa167ca015e78315c7f5b45a945ce117c88"
+    sha256 cellar: :any, x86_64_linux:      "15b66f938dbc2e052a56652a17feaa499e56d30b7aa0f2d167cbf13efb44f25e"
   end
 
   depends_on "cmake" => :build # Needed to build LLVM
