@@ -16,12 +16,11 @@ class LlamaCpp < Formula
   end
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any, arm64_golden_gate: "e93f3cacfd151edd567eaf9c2db411a37c7ec3d633aa2d201fceaa3b891951c1"
-    sha256 cellar: :any, arm64_tahoe:       "0cfd88c48811e3409b0e972af32825be0e8721b1a29e2f5f5bd937cbe9337a21"
-    sha256 cellar: :any, arm64_sequoia:     "7c1c1d5cd792fc0d4973aae200f5d361c9e5be48da773f5f7b19e4f7bcf35877"
-    sha256 cellar: :any, arm64_linux:       "e2c2e42a1a1843ea3ff1a6cd2a9c2e4149241c42601ac765080c22417095965c"
-    sha256 cellar: :any, x86_64_linux:      "8d61c81e484480b08c6587aac0009135b8e643721c72d9e56df064d0a9c15bcf"
+    sha256 cellar: :any, arm64_golden_gate: "b02966242fd7fdfcda0070d79a5225c2a80f506ff7e74e9ab116eaac93387ecc"
+    sha256 cellar: :any, arm64_tahoe:       "2030b868c907e097a1c622e5aae31a26da14cf4c074bbb8d124ea8091fc08e13"
+    sha256 cellar: :any, arm64_sequoia:     "6c9bfc46a16bd87d929c5c3a7aea5614607434b3390d7b19d362b77e81ad6734"
+    sha256 cellar: :any, arm64_linux:       "002a7a5def07120b79f0ca66dd44e2ed13c6fa1a15afdc82c3bf9daaf0a24154"
+    sha256 cellar: :any, x86_64_linux:      "f6626a6f07eb1df925ceefe850a5b65419c3526000c75808abc4bdff2c4200ff"
   end
 
   depends_on "cmake" => [:build, :test]
