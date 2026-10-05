@@ -1,8 +1,8 @@
 class Leetgo < Formula
   desc "CLI tool for LeetCode"
   homepage "https://github.com/j178/leetgo"
-  url "https://github.com/j178/leetgo/archive/refs/tags/v1.5.0.tar.gz"
-  sha256 "74811881a19f44a351030b7b84044bef25ebfb115153cab17495d8a211acfa44"
+  url "https://github.com/j178/leetgo/archive/refs/tags/v1.5.1.tar.gz"
+  sha256 "0bcd0b22ec53e527f06d9a12aa8540f0dfa97ba5ff0c5aa0a095002ff7c90c42"
   license "MIT"
   head "https://github.com/j178/leetgo.git", branch: "master"
 
