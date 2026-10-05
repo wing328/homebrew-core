@@ -25,7 +25,7 @@ class Lfk < Formula
     ENV["CGO_ENABLED"] = "0"
     ldflags = %W[
       -X github.com/janosmiko/lfk/internal/version.Version=#{version}
-      -X github.com/janosmiko/lfk/internal/version.BuildDate=#{Time.now.utc.iso8601}
+      -X github.com/janosmiko/lfk/internal/version.BuildDate=#{time.iso8601}
     ]
     system "go", "build", *std_go_args(ldflags:)
   end
