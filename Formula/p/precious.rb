@@ -1,8 +1,8 @@
 class Precious < Formula
   desc "One code quality tool to rule them all"
   homepage "https://github.com/houseabsolute/precious"
-  url "https://github.com/houseabsolute/precious/archive/refs/tags/v0.12.0.tar.gz"
-  sha256 "c3e10e136ded670bceb7cad93e95aad282355f728c5f5a1121af4ef1a7c50821"
+  url "https://github.com/houseabsolute/precious/archive/refs/tags/v1.0.0.tar.gz"
+  sha256 "2de1f5ed8d9013065577d51e6ec3762e6cb1db7aff20e0495f312416728e2e07"
   license any_of: ["Apache-2.0", "MIT"]
   head "https://github.com/houseabsolute/precious.git", branch: "master"
 
@@ -18,6 +18,12 @@ class Precious < Formula
 
   depends_on "rust" => :build
 
+  deny_network_access!
+
+  def fetch
+    system "cargo", "fetch", *std_cargo_fetch_args
+  end
+
   def install
     system "cargo", "install", *std_cargo_args
   end
@@ -25,7 +31,9 @@ class Precious < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/precious --version")
 
+    (testpath/"test.rs").write "fn main() {}\n"
     system bin/"precious", "config", "init", "--auto"
     assert_path_exists testpath/"precious.toml"
+    assert_match "rustfmt", (testpath/"precious.toml").read
   end
 end
