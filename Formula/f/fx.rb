@@ -1,8 +1,8 @@
 class Fx < Formula
   desc "Terminal JSON viewer"
   homepage "https://fx.wtf"
-  url "https://github.com/antonmedv/fx/archive/refs/tags/39.2.0.tar.gz"
-  sha256 "cdb98177f956615c961bc615fab0b30e73167295152d4f2d4cb70b16cdf47d6e"
+  url "https://github.com/antonmedv/fx/archive/refs/tags/40.0.0.tar.gz"
+  sha256 "92e5ade859952bc79a3c68492803ce0af25a7332c78c4a0e1914da302d88b478"
   license "MIT"
   head "https://github.com/antonmedv/fx.git", branch: "master"
 
