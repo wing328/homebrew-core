@@ -14,8 +14,8 @@ class Ntfs3g < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_linux:  "dc22139019c664e418029b2ae74f92a8813947655b918370cd227b83b34c74af"
-    sha256 cellar: :any, x86_64_linux: "6570028c4fd08c130c37ff34771baf302d2e06ba139f6f75083a20ac54314411"
+    sha256 cellar: :any, arm64_linux:  "0fe401877e6a03904563450a90dfdc6cc6b2706af0877672e9b3e365203c1a27"
+    sha256 cellar: :any, x86_64_linux: "60da469cb04ac47158f1ca829de37e3305a89ae441516091868aa7ddda216615"
   end
 
   depends_on "autoconf" => :build
