@@ -142,6 +142,7 @@
   "python-cryptography": "cryptography",
   "ra-multiplex": "lspmux",
   "racket": "minimal-racket",
+  "ratex": "texres",
   "rebar@3": "rebar3",
   "recipes": "gnome-recipes",
   "repopack": "repomix",
