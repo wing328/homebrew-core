@@ -12,11 +12,11 @@ class Findent < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "e01821c301fd95de769c3bc98fbf5b891daef2510fac2ba0b1de981f4e06ba71"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "d395a5254a6a99c428e1ca07d01f83ef28c1a443f4382c9901bb354c767ee5f0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "f483ac6ca4872a8518282963ed0aa180e995d10197a78091b4f73e1a137c1797"
-    sha256 cellar: :any,                 arm64_linux:       "6e64ca49414c263a42b9c05303c1dd7b7f49246b54e394318342a501d962b092"
-    sha256 cellar: :any,                 x86_64_linux:      "26b247c008089643577c5fe4145cda0d47fe06077abc4fcae8e1174138a3ad06"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "2ab0aa33d7f954a2be3a4e2f56ebc55ca565b589eac403ae9b66f3659da7585e"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "7f9b14f57b8752eac97bfd8f17d587e3d247913f9264ed2e83c12be1c9dc7d20"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "2e37dfb46ff57e8245d01cbfbbe88ed18c2ba042ab1e9b7ac0e8e7e7ac766457"
+    sha256 cellar: :any,                 arm64_linux:       "72c6ebb21232a5506d22f7df38d2227f1a1c68225b6c55783cc5a33e83d7a106"
+    sha256 cellar: :any,                 x86_64_linux:      "a3670e9fe92352e5f2e8389a1c794c30f2b1df158229ce3495ae8e3386d98cc1"
   end
 
   def install
