@@ -15,11 +15,11 @@ class Mold < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_golden_gate: "6390617a0c79613f91c5735bc135ec0b04d5e0c2f120252b2390dbf1d101e054"
-    sha256 cellar: :any, arm64_tahoe:       "f8783cd443e4c1e4a8386fbb76350f2da37faa6c35ff82452afc625c6b04bd7e"
-    sha256 cellar: :any, arm64_sequoia:     "93ecc52ad053adcd04a72ce700063929fdb3333a9a910b0302631d200c443a67"
-    sha256 cellar: :any, arm64_linux:       "4a38f8aae2d02d9df37301e35e094df54119dbd8a906c9424a1717f5fc7026af"
-    sha256 cellar: :any, x86_64_linux:      "1a9ba98129bb0220979933261e8da4d477746091756e6cea5ee809b6a3ec523d"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "d650eeb42f0dc200cab6b45134fa59f4445f27208842c8961b6a70d8f2bec84b"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "c8f01cf08c344876a3ae42209d875f3f4f7f6c13d1484e7edaa25184e2f4321e"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "701bf9b883b67b4b0bd3b795ee37db04f2ecb2e3dc532275927772a4b1443a58"
+    sha256 cellar: :any,                 arm64_linux:       "444c4f996635d6365ddec4c6f5e89e5a541f9719c8d2f5bf2eff6e0034433662"
+    sha256 cellar: :any,                 x86_64_linux:      "7de8c9ae501d39f5e454e07543ecd6b4925b426730e03b648a5a79c638e43717"
   end
 
   depends_on "rust" => :build
