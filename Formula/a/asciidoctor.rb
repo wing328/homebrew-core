@@ -6,14 +6,12 @@ class Asciidoctor < Formula
   license "MIT"
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "b076aeb7514b5e547c27e4b7eb6536d187a0d5e19a7f5f1cb77472d56f0c6417"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "3951c7e0d82ca03dc973d88588c0a13193f043e0d4b5aa0836dba461b9dba9dc"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "3951c7e0d82ca03dc973d88588c0a13193f043e0d4b5aa0836dba461b9dba9dc"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:      "3951c7e0d82ca03dc973d88588c0a13193f043e0d4b5aa0836dba461b9dba9dc"
-    sha256 cellar: :any_skip_relocation, sonoma:            "3951c7e0d82ca03dc973d88588c0a13193f043e0d4b5aa0836dba461b9dba9dc"
-    sha256 cellar: :any_skip_relocation, arm64_linux:       "917225adfd18ac73b16ac74dabba98fa12c8f1ca462c34d73d7790d9ad30b96f"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:      "917225adfd18ac73b16ac74dabba98fa12c8f1ca462c34d73d7790d9ad30b96f"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "f23e439ed2f428dcdff377e3d8af969460061cecb38bd323bfc54bc5f7c6e299"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "f23e439ed2f428dcdff377e3d8af969460061cecb38bd323bfc54bc5f7c6e299"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "f23e439ed2f428dcdff377e3d8af969460061cecb38bd323bfc54bc5f7c6e299"
+    sha256 cellar: :any_skip_relocation, arm64_linux:       "c6001fecadce7f4eca4a5e590e90e2db74d0af7f9b80ae288c5489aec9b56306"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:      "c6001fecadce7f4eca4a5e590e90e2db74d0af7f9b80ae288c5489aec9b56306"
   end
 
   # Some gems require >= ruby 2.7
