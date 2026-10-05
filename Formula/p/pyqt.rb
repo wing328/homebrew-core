@@ -4,6 +4,7 @@ class Pyqt < Formula
   url "https://files.pythonhosted.org/packages/8b/47/b25c13eca5bebc6505394d0223e46d7ebf0c57dcac2ed908d7d19b18ab6b/pyqt6-6.11.0.tar.gz"
   sha256 "45dd60aa69976de1918b5ced6b4e7b6a25abd2a919ecef5fd5826ecc76718889"
   license "GPL-3.0-only"
+  revision 1
   compatibility_version 1
 
   bottle do
@@ -75,8 +76,8 @@ class Pyqt < Formula
   end
 
   resource "pyqt6-sip" do
-    url "https://files.pythonhosted.org/packages/90/24/a753e1af94b9ae5b2da63d4598457308da3cdbf0838c959381db086ccc86/pyqt6_sip-13.11.1.tar.gz"
-    sha256 "869c5b48afe38e55b1ee0dd72182b0886e968cc509b98023ff50010b013ce1be"
+    url "https://files.pythonhosted.org/packages/78/35/bed43ff7cf040ced6b62a17b272abecb94914755284b54e8d06844e1ed23/pyqt6_sip-13.13.0.tar.gz"
+    sha256 "2cd55f575cde208c398d6cfdecc5a13394ed2afb54226210c50e3a6df7c3a997"
   end
 
   resource "pyqt6-webengine" do
