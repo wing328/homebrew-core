@@ -27,13 +27,13 @@ class Asciidoctor < Formula
   end
 
   resource "treetop" do
-    url "https://rubygems.org/gems/treetop-1.6.12.gem"
-    sha256 "ed48add684a2d7a8fd6e3b8b027d8ee5983b50977ae691913131a24f1746ac29"
+    url "https://rubygems.org/gems/treetop-1.6.18.gem"
+    sha256 "a3043f32f1c652aa2abdf3a3848edb2d2f69897257af2675516ac61355c183da"
   end
 
   resource "concurrent-ruby" do
-    url "https://rubygems.org/gems/concurrent-ruby-1.2.3.gem"
-    sha256 "82fdd3f8a0816e28d513e637bb2b90a45d7b982bdf4f3a0511722d2e495801e2"
+    url "https://rubygems.org/gems/concurrent-ruby-1.3.8.gem"
+    sha256 "b2f1be836e968ccc78ccfce277ea79c72a88633f22306782c16ff23fb415d1e1"
   end
 
   resource "ttfunk" do
@@ -62,8 +62,8 @@ class Asciidoctor < Formula
   end
 
   resource "matrix" do
-    url "https://rubygems.org/downloads/matrix-0.4.2.gem"
-    sha256 "71083ccbd67a14a43bfa78d3e4dc0f4b503b9cc18e5b4b1d686dc0f9ef7c4cc0"
+    url "https://rubygems.org/downloads/matrix-0.4.3.gem"
+    sha256 "a0d5ab7ddcc1973ff690ab361b67f359acbb16958d1dc072b8b956a286564c5b"
   end
 
   resource "public_suffix" do
@@ -132,8 +132,8 @@ class Asciidoctor < Formula
   end
 
   resource "asciidoctor-pdf" do
-    url "https://rubygems.org/gems/asciidoctor-pdf-2.3.15.gem"
-    sha256 "432effdefdcd6433a797b702422b5f6fd4120c495c5f75ae059159aa75aa9a94"
+    url "https://rubygems.org/gems/asciidoctor-pdf-2.3.27.gem"
+    sha256 "fd828e6d8663bbeb3c808ba2286631c2830de0d18f98f89e08cd5525a3747044"
   end
 
   resource "coderay" do
