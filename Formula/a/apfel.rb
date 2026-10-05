@@ -1,14 +1,14 @@
 class Apfel < Formula
   desc "Apple Intelligence from the command-line, with OpenAi-compatible API server"
   homepage "https://apfel.franzai.com"
-  url "https://github.com/Arthur-Ficial/apfel/archive/refs/tags/v1.12.0.tar.gz"
-  sha256 "baae1ab8e1a7121e3a998e36090343e1dbdde283639fe84f5a625f8bae25038c"
+  url "https://github.com/Arthur-Ficial/apfel/archive/refs/tags/v1.13.0.tar.gz"
+  sha256 "777789e6a5153dfecf16db0aa63d64a2bd670deaac5837ca0e8dc1ed794b163e"
   license "MIT"
   head "https://github.com/Arthur-Ficial/apfel.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "9bc8244e3b0307c01135b59d2c2bd267c402587cd21933896f26e914c8b0723d"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "0145710b5129b263d4bb7308ea941501ee50bb75afb73f72ba5fe97e677b0270"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "e263100ba38b30ba530213b43bae183775a4892b2e6b9880165c238f4adf9547"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "cd7c536fac8937fef85a9a23c87b95ceb970bcbdd44e3a7c061d7da39eb09c32"
   end
 
   depends_on xcode: ["26.4", :build]
