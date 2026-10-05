@@ -11,7 +11,7 @@ class Jetty < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, all: "824641da5d01b740aaa1835b07b42c5df18d037e71c60919fa8ec4b41c502edf"
+    sha256 cellar: :any_skip_relocation, all: "e462a20199043736f18f13f34cd20aadeef468cbdd54898831670277eae38344"
   end
 
   depends_on "openjdk"
