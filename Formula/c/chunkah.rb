@@ -1,8 +1,8 @@
 class Chunkah < Formula
   desc "OCI building tool for content-based layers"
   homepage "https://github.com/coreos/chunkah"
-  url "https://github.com/coreos/chunkah/releases/download/v0.7.0/chunkah-0.7.0.tar.gz"
-  sha256 "92a88a65c31d9fa223357334342ebc35c6a9c035eac3ce6dded536bc863ddd8a"
+  url "https://github.com/coreos/chunkah/releases/download/v0.7.1/chunkah-0.7.1.tar.gz"
+  sha256 "12c0101532e4c65cd63244f28ed801296df9d0a7302e3646026387f684fb690b"
   license "Apache-2.0"
 
   bottle do
