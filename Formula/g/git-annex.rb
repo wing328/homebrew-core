@@ -1,8 +1,8 @@
 class GitAnnex < Formula
   desc "Manage files with git without checking in file contents"
   homepage "https://git-annex.branchable.com/"
-  url "https://hackage.haskell.org/package/git-annex-10.20260901/git-annex-10.20260901.tar.gz"
-  sha256 "f7843f937103819b93d7c436410ac5cd2db0a8863d14eabeb15712f2bfd74582"
+  url "https://hackage.haskell.org/package/git-annex-10.20261005/git-annex-10.20261005.tar.gz"
+  sha256 "07b16092c91925a9e21f6011fd39a4e5d944b0e037df4de838dd106f501db8d2"
   license all_of: ["AGPL-3.0-or-later", "BSD-2-Clause", "BSD-3-Clause",
                    "GPL-2.0-only", "GPL-3.0-or-later", "MIT"]
   head "git://git-annex.branchable.com/", branch: "master"
@@ -34,12 +34,28 @@ class GitAnnex < Formula
     depends_on "zlib-ng-compat"
   end
 
+  # TODO: Remove when the ram compatibility fix is released:
+  # https://github.com/yesodweb/yesod/pull/1916
+  resource "yesod-static" do
+    url "https://github.com/yesodweb/yesod/archive/23f8d636842023c7cde36109ea24258df0d5ecd6.tar.gz"
+    version "1.6.1.4"
+    sha256 "0b523bd616673dad5e70da42149b426cfd19a7e5666e0550dad06bb9d989b82b"
+  end
+
+  allow_network_access! :build
+
   def install
+    resource("yesod-static").stage do
+      (buildpath/"vendor").install "yesod-static"
+    end
+    (buildpath/"cabal.project.local").write "packages: . vendor/*/*.cabal\n"
+
     args = [
       # Workaround to build with GHC 9.14
       "--allow-newer=base,template-haskell",
-      # Workaround for https://github.com/yesodweb/yesod/issues/1917
-      "--constraint=ram<0",
+      # TODO: Remove when crypton-conduit supports the checked-key API:
+      # https://github.com/psibi/crypton-conduit/issues/5
+      "--constraint=crypton<2.0.1",
       # Workaround for API breaking release of magic
       "--constraint=magic<2",
       # Workaround for QuickCheck 2.17+ providing its own `Arbitrary (NonEmpty a)`
