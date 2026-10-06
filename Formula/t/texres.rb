@@ -7,11 +7,11 @@ class Texres < Formula
   head "https://github.com/leoliu0/texres.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "165ffdc831cc8fd89f0bcab19c3fde83fe7b9c4bd04d17001d7cbb7619ddb613"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "de2ad22330910053c1bc10ca52eb90f426985253a2299bdd8e5e7220dfaffcc5"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "0b1f9fa61fe8401aaec5dbdc03410ad38df19b27df2415a9cd988d1f59db4e8a"
-    sha256 cellar: :any,                 arm64_linux:       "639700e9ac453ecd820171050b0fa27c4789945fcb8040125657960b328642eb"
-    sha256 cellar: :any,                 x86_64_linux:      "63e95511a419734b65c5e4fdb688b0df9278a44475b4b2605d1986cff4f99f01"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "7330f86f2feb1777af2a0cae5b777ac698b35b5e60d0e593f25a6cb206ac1785"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "39f79d14c7a3bd03d138e5bdf5ffdde5d47395719ef315eabf3348f3503250cb"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "01f0e901a6023f81099d5cae34c246b7860f14a835003b2a9fa5fa1d6879bc55"
+    sha256 cellar: :any,                 arm64_linux:       "180d47b7238ccee087cf522ab491a191ffd645df87ee629c3cde51bdd4a21f79"
+    sha256 cellar: :any,                 x86_64_linux:      "b259fc4e5c8f96baede75144a9d2e1ec1bda4c8a0063cdf23de47d7df65b06c5"
   end
 
   depends_on "rust" => :build
