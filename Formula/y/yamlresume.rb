@@ -6,11 +6,11 @@ class Yamlresume < Formula
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "3f146349761bc319da912ecca0cef7a29fe97e3aac219b7a41ea2beb64aedb26"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "284aa333b474069c22fb712ff61eeba8615513d58c7a332b59be55a02d368b78"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "749c0bb91b6128bc35bff56353af20653b84249c40f8da0c029473ce73aebe3b"
-    sha256 cellar: :any_skip_relocation, arm64_linux:       "2a8765885b8e0878d7f74293148f97d9ed095286308edc5375223a159e659ac6"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:      "2a8765885b8e0878d7f74293148f97d9ed095286308edc5375223a159e659ac6"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "6674ee535689d22bd88fdbe17712f4ea5cb42a24fa7e84336d044a8d2d1dd2d6"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "aae8132040b679225c47b4382cf163565ae00a346162fea95dc909c36b3da34c"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "96e0f8fea44a2f92bb7a95756129d0ba4ec49f7ce86fd23d932ea6150b7ac550"
+    sha256 cellar: :any_skip_relocation, arm64_linux:       "67bc112dee15b36b1fd9c5775f11f566b1f112c7e6381735f0e0021452c9c686"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:      "67bc112dee15b36b1fd9c5775f11f566b1f112c7e6381735f0e0021452c9c686"
   end
 
   depends_on "node"
