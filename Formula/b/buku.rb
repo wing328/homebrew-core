@@ -18,11 +18,11 @@ class Buku < Formula
   end
 
   bottle do
-    sha256 cellar: :any, arm64_golden_gate: "12d9eab3f5e924ccb6c2254892dd3e8a6cea0f78012b0c17b822d2d318a79860"
-    sha256 cellar: :any, arm64_tahoe:       "a963b962313227865ebf59d6ebc596e11ac37ec29556d4346963c421994236b8"
-    sha256 cellar: :any, arm64_sequoia:     "d311b666430a81b932c6e6c3193ef704fe622f31c4aa9b265e91f8402fc9be58"
-    sha256 cellar: :any, arm64_linux:       "968fff2e1823c91b92937c2b4fbc0b93a0928fd70abe3dae53d619c0fb11ef6e"
-    sha256 cellar: :any, x86_64_linux:      "101b84757dd573699a4c37590eb0f4aabd0839ea7674214e73ed3029109b3437"
+    sha256 cellar: :any, arm64_golden_gate: "a0031da353a801799078b9ed5823310f4adbbe717492eabe21c201de6021fb1c"
+    sha256 cellar: :any, arm64_tahoe:       "712282b1342d965c37264a72a7195dcbc3a0795bfe75416724d417c3f758e0c1"
+    sha256 cellar: :any, arm64_sequoia:     "7597b0a7bd7ed654979e858acfe106a3ae16e27b56d459130966711720735a7e"
+    sha256 cellar: :any, arm64_linux:       "9b5ea3f06ddac98ba6228cbc8d52b00f2c66609ecfabe337940076287c9eec75"
+    sha256 cellar: :any, x86_64_linux:      "763fd0ce6590ea74c4effb254843e2cd5c469772e6c63c2aaf5fc4956fc57020"
   end
 
   depends_on "certifi" => :no_linkage
