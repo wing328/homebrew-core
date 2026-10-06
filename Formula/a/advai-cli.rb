@@ -9,13 +9,11 @@ class AdvaiCli < Formula
   revision 2
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "3c82d8a03b3a11d427a716d4b09949f8c0f7026beab086986a1f0ce41d46d5c7"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "13bf58bf3c0490d68de02c44eed920bd4f6c2817d3297a574a738b91eb484c04"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "e1f524dfb281f5fa803e2e5ac2040be482ce98caa7c6d61960d31ee0e939aada"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma:      "3e50110f2ed9868a0382c3acefcb5df3c98d7617c4fc6190c8f053774c592725"
-    sha256 cellar: :any_skip_relocation, sonoma:            "5d6774e12c41f9dc043defb01c75c1bcb210485bd5a97de6ecfad40fd26d8cf5"
-    sha256 cellar: :any,                 arm64_linux:       "7cb3facf0b8e4d7d82bad0f1d6e388b48b78825825854e19e6d4926989692645"
-    sha256 cellar: :any,                 x86_64_linux:      "d18208306262f53e443a21617d55daef7ab75b10231189bb327e5b12ffc5f38f"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "647dcd5ae40d85b1b4cf7ce37bdb4539c3a3eda7deec752c257e52306fbb7e1a"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "166f1a82988f0aba337a80a326fdadfb9728da384828fcd1168b466a3a45c3e2"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "377660ae01a4698fe4b07101a2f29eddc17ae39c3ee615dd8993150c6dbf9099"
+    sha256 cellar: :any,                 arm64_linux:       "967c839835fd3cb8ff167a341ed51af52d745866946e853ace7c667987891f34"
+    sha256 cellar: :any,                 x86_64_linux:      "3b24fdf72b6914ce71849c8731989a19e037f94439c71f5fe8c0bda9cb335c45"
   end
 
   depends_on "python@3.14"
