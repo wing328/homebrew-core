@@ -2,8 +2,9 @@ class Rpiboot < Formula
   desc "Raspberry Pi USB boot tool for Compute Modules"
   homepage "https://github.com/raspberrypi/usbboot"
   url "https://github.com/raspberrypi/usbboot.git",
-      tag:      "20250908-162618",
-      revision: "d90eab5130c4fe4a6d92699e5268c1956f46939c"
+      tag:      "20261002-115811",
+      revision: "51006f8d77dbb99c408737825dd0d57285b7d00d"
+  version "20261002-115811"
   license "Apache-2.0"
   head "https://github.com/raspberrypi/usbboot.git", branch: "master"
 
@@ -26,6 +27,8 @@ class Rpiboot < Formula
   depends_on "libusb"
 
   uses_from_macos "vim" => :build # for xxd
+
+  deny_network_access!
 
   def install
     bin.mkpath
