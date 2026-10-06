@@ -14,13 +14,11 @@ class Cups < Formula
   end
 
   bottle do
-    sha256 arm64_golden_gate: "84e35c90fe706198aa7ec1883a41e8866a4f0bd344d57f62d7f5878c48de6581"
-    sha256 arm64_tahoe:       "d955afb80fe37ae3abe24508266366e3a478e44f8c9d7cc2ef1f2d9a4731e6cc"
-    sha256 arm64_sequoia:     "2342daafe9e22f6a38607caf91e3179c7a2be986a383f5d6dddeb474ab002cba"
-    sha256 arm64_sonoma:      "9c026b11d6639e63bfc936a8e3c2a94f37ed85091fadb89deff2cb0c9fd76ba2"
-    sha256 sonoma:            "b9bf43810cfc359937f058290c785f409466403a9def318bdaab9bd93b839f27"
-    sha256 arm64_linux:       "e33032a47e3f727b4a61c5470f661b65335dd2e9a08b978789eab8efec25a196"
-    sha256 x86_64_linux:      "339e4513038a7866df092989c8f03bb5139be6287a4544e075d208eccb968c0c"
+    sha256 arm64_golden_gate: "5f59ea1a3f8f065f8ecfb09162f335d5602e48e1898803578f99ec7b6b05f3dc"
+    sha256 arm64_tahoe:       "ef58fb5920d8f32ec71840a0b5e9ce0df756be5e00f7e20562bf68a3b2c637e8"
+    sha256 arm64_sequoia:     "96aa911bc2a107bdf3de8b6488363ab9c92e86f0c30691f411ac9e8e8230d62c"
+    sha256 arm64_linux:       "0e8320ed95664408f90596bc0e043fda06d52606aa3e323bef6e6be48b0f5a55"
+    sha256 x86_64_linux:      "650c439a2c171bf498999727da56298900c677e87a4b995991b7ddace0397841"
   end
 
   keg_only :provided_by_macos
