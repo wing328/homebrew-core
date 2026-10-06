@@ -10,11 +10,11 @@ class Maigret < Formula
   head "https://github.com/soxoj/maigret.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "c2e2e503dc3fd12972bace678fa20a269193317314dd9e71aa58609f93b4e240"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "b0d7d67a9e024647fc9e18ab1ae52145f68cb4b9dba1cffcd2f1f78776c18961"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "91c29adc84d14562b1ff5bdf61d897ae81870195f0ffd44e8358cfc31247f415"
-    sha256 cellar: :any,                 arm64_linux:       "de1315740879474e3c47822f4ee6e6b93b6c99404ca0de29753bbabd3168c6e3"
-    sha256 cellar: :any,                 x86_64_linux:      "372df20008e814575f2709bffb9c6f1f85515d8116534d1e53fc6ea4fd97cc40"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "82349a58995e7dd8d7d8ec859c178bd36fd3753f34badf754d07014aaec76444"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "62b008cd00ea62b5c92be67d9762939d874da55ec2df199de47908c11972ac4b"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "ed386a7fb37d78488caaf2f84eeed71b55026d884bdbd9caaf04c875bd60f6b7"
+    sha256 cellar: :any,                 arm64_linux:       "1203a108a555dd6c0cb3063847680a0fee3acbd64f42b51642daa8b2c64402f4"
+    sha256 cellar: :any,                 x86_64_linux:      "bc416369334e2281acfe5bcf363015d8bc78e6f1475f6385528bfa6c164e1296"
   end
 
   depends_on "cmake" => :build # for pycares
