@@ -11,11 +11,11 @@ class Nift < Formula
   end
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "357641eadd1ece4935222480c36c8230ca4ce70f32ee55ae2909a3cae87b4a6a"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "9ac1868663e5c14aa96fde8da5e8d41bfa27b5d6612c35060e04936b7a3dfdb6"
-    sha256 cellar: :any,                 arm64_sequoia:     "64012d1cb30d4c90d41c661b91ade305c0de5530157d8d9668b27c610e9b45b5"
-    sha256 cellar: :any,                 arm64_linux:       "ffef0fa4777042b88a6896b7cc6d6bf962b821542d7aa339b39ceea80beffdfe"
-    sha256 cellar: :any,                 x86_64_linux:      "99ea7233aa04535a3000101ee66426303824309f715c5cf1b8b67aedf14c5547"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "82ea9e17f3bf749701b323a5379a4546dcd229a2b42bf0b38505f1c2c10564df"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "aa514c538bee8b7e544c73e339c68b4359e206d2df5691a7ed81ed776d17aadb"
+    sha256 cellar: :any,                 arm64_sequoia:     "3a20b4358111e66c1c356b4639de63e9262602ccf3ed3ed8ae46079b727e3f66"
+    sha256 cellar: :any,                 arm64_linux:       "c9ba3d566bed759197ea0e2457b75488080b731df4c16e43a33a81376c8fdb39"
+    sha256 cellar: :any,                 x86_64_linux:      "f2504f6efa40c6f7ea22ffd40a4b0388be70785349eb53183846caeae344a5dc"
   end
 
   depends_on "python@3.14" => :build
