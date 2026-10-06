@@ -109,7 +109,6 @@
     "qtvirtualkeyboard",
     "qtwayland",
     "qtwebchannel",
-    "qtwebengine",
     "qtwebsockets",
     "qtwebview"
   ],
