@@ -10,11 +10,11 @@ class SmbclientNg < Formula
   head "https://github.com/p0dalirius/smbclient-ng.git", branch: "main"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "41650b55ce11dda3939dabb7c8a50a862c408cd5a04f8b574bb15f30fd7161a4"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "3cb4a752600d7a5c968f901ebc09117bcdcf453a4605963c26a51c1247ade13e"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "69fe232e491112da79f9b744fc26616d99f48b6f905bdf655d55e28cc829f8fc"
-    sha256 cellar: :any,                 arm64_linux:       "6bd4a05fb1094e1e54de46e0fd0215bef456a7f01323fead40240d8deb3251cc"
-    sha256 cellar: :any,                 x86_64_linux:      "aea1f1eb2014db31c8a2022107936006a5852c403b9b41252bd7c2deba9f6d09"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "bf27301c47761b6d8c7b39079ccf5de0a339670cbe39972b5388a50e8208093a"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:       "c77b40df8ca784c630a45d502a67fe20e64529ac0ca364f7e68086f606bf53ac"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "eaa41914a681e1ea5a2d156efd755aef3bb7130ed8b39d83df8860fb851e5902"
+    sha256 cellar: :any,                 arm64_linux:       "66416a2b01e46f4465a10f1280f0ab10502df8c15126ec0d82543fd0e00e1e32"
+    sha256 cellar: :any,                 x86_64_linux:      "cfe728a0517f39d8dc64c559fbaa80fbd09f0307619ebcaddaff940398f964a6"
   end
 
   depends_on "samba" => :test
